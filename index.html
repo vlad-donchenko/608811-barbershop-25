@@ -8,7 +8,7 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a href="#" class="main-header-logo">
-				<img src="img/index-logo.svg" alt="Логотип Барбершопа «Бородинский»">
+				<img src="img/svg-barbershop/index-logo.svg" width="368" height="153" alt="Логотип Барбершопа «Бородинский»">
 			</a>
 			<ul  class="site-navigation">
 				<li>
@@ -108,6 +108,25 @@
    			<p class="appointment-info">
    				УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
    			</p>
+            <form action="" method="post" class="appointment-form"> 
+               <p class="appointment-item">
+                  <label for="appointment-date">ДАТА</label>
+                  <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+               </p>
+                <p class="appointment-item">
+                  <label for="appointment-time">ВРЕМЯ</label>
+                   <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+                </p>
+               <p class="appointment-item">
+                  <label for="appointment-name">ВАШЕ ИМЯ</label>
+                  <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+               </p>
+               <p class="appointment-item">
+                  <label for="appointment-phone">ТЕЛЕФОН</label>
+                  <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+               </p>
+               <button class="button" type="submit">ОТПРАВИТЬ</button>
+            </form>
    		</section>
    	</main>
    	<footer class="main-footer">
@@ -140,14 +159,33 @@
    	<section class="modal modal-login">
    		<h2>Личный кабинет</h2>
    		<p>
-   			ВВедите пожалуйста свой логин и пароль
+   			Введите пожалуйста свой логин и пароль
    		</p>
-   		<span class="modal-close">x</span>
+         <form action="" method="post" class="logon-form">
+            <p>
+               <label class="visually-hidden" for="user-login">Логин</label>
+               <input id="user-login" type="text" name="login" class="login-icon-user" placeholder="ЛОГИН">
+            </p>
+            <p>
+               <label class="visually-hidden" for="user-password">Пароль</label>
+               <input id="user-password" type="password" name="password" class="login-icon-password" placeholder="ПАРОЛЬ">
+            </p>
+            <p class="login-pasword-info">
+               <label class="login-checkbox">
+                  <input type="checkbox" name="remember">
+                  ЗАПОМНИТЕ МЕНЯ
+               </label>
+               <a href="#" class="restore">Я ЗАБЫЛ ПАРОЛЬ!</a>
+            </p>
+            <button class="button" type="submit">ВОЙТИ</button>
+         </form>
+   		<button type="button" class="modal-close">Закрыть</button>
    	</section>
 
    	<section class="modal modal-map">
    		<h2 class="visually-hidden">Как до нас добраться</h2>
-   		<span class="modal-close">x</span>
+         <img src="img/map.jpg" width="780" height="561" alt="Офис компании по адресу  САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8">
+   		<button type="button" class="modal-close">Закрыть</button>
    	</section>
   </body>
 </html>
